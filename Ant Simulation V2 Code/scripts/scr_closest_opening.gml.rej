@@ -1,0 +1,12 @@
+diff a/Ant Simulation V2.gmx/scripts/scr_closest_opening.gml b/Ant Simulation V2.gmx/scripts/scr_closest_opening.gml	(rejected hunks)
+@@ -9,8 +9,8 @@
+     return noone;
+ }
+ //Get targets position in the grid 
+-var gridX = getOffsetX(argument[0].x);
+-var gridY = getOffsetY(argument[0].y);
++var gridX = argument[0].x div TILE_WIDTH;
++var gridY = argument[0].y div TILE_HEIGHT;
+ 
+ //Left empty
+ if(obj_world_controller.solidGrid[# gridX - 1, gridY] == 0)
